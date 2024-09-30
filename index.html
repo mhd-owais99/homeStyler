@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME STYLER</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assests/style.css">
+    <link rel="icon" type="image/x-icon" href="./assests/images/logo.png">
+
+</head>
+<style>
+    .image-container {
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 10px;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.5s;
+
+    }
+
+    .image-container:hover img {
+        transform: scale(1.1);
+    }
+
+    .image-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.5s;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: monospace;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: bisque;
+        flex-direction: column;
+        transition: opacity 0.5s;
+        padding: 0;
+        margin: 0;
+    }
+
+    .image-container:hover .image-text {
+        opacity: 1;
+    }
+
+    .imge {
+        height: 295px !important;
+    }
+
+    #map {
+        height: 100vh;
+        width: 100%;
+        margin-bottom: 50px;
+        margin-top: -100px;
+    }
+</style>
+
+<body>
+    <nav>
+        <div class="wrapper">
+            <a class="navbar-brand" href="#">
+                <img src="assests/images/logo.png" alt="" width="100px" height="50px">
+            </a>
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="product.html" class="desktop-item">Product</a>
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile-item">Mega Menu</label>
+                    <div class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <header><a href="product.html?services=furniture">furniture</a></header>
+                                <ul class="mega-links">
+                                    <li><a href="./furniture/sofa.html">sofas & couches</a></li>
+                                    <li><a href="./furniture/chairs.html">chairs & recliners</a></li>
+                                    <li><a href="./furniture/table.html">tables</a></li>
+                                    <li><a href="./furniture/beds.html">bed & matresses</a></li>
+                                    <li><a href="./furniture/storage.html">storage</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header><a href="product.html?services=kitchen">kitchen</a></header>
+                                <ul class="mega-links">
+                                    <li><a href="./kitchen/cabinets.html"> Cabinets & Pantries</a></li>
+                                    <li><a href="./kitchen/counter.html"> Counter tops</a></li>
+                                    <li><a href="./kitchen/sinks.html"> Sinks & Faucets</a></li>
+                                    <li><a href="./kitchen/carts.html"> Kitchen Islands & Carts</a></li>
+                                    <li><a href="./kitchen/back.html"> Backsplashes</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header><a href="product.html?services=Lighting">Lighting</a></header>
+                                <ul class="mega-links">
+                                    <li><a href="./lighting/ceiling.html">Ceiling Lights</a></li>
+                                    <li><a href="./lighting/walls.html">Wall Lights</a></li>
+                                    <li><a href="./lighting/floor.html">Floor Lamps</a></li>
+                                    <li><a href="./lighting/lamp.html">Table Lamps</a></li>
+                                    <li><a href="./lighting/outdoor.html">Outdoor Lighting</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header><a href="product.html?services=Decor">Decor</a></header>    
+                                <ul class="mega-links">
+                                    <li><a href="./decor/rugs.html"> Rugs & Carpets</a></li>
+                                    <li><a href="./decor/curtains.html"> Curtains & Blinds</a></li>
+                                    <li><a href="./decor/wall.html"> Wall Art & Mirrors</a></li>
+                                    <li><a href="./decor/cusshion.html"> Cushions & Throws</a></li>
+                                    <li><a href="./decor/vasses.html"> Vases & Plant Pots</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header><a href="product.html?services=Bathroom">Bathroom</a></header>
+                                <ul class="mega-links">
+                                    <li><a href="./bathroom/vanities.html">Vanities & Cabinets</a></li>
+                                    <li><a href="./bathroom/showers.html">Showers & Bathtubs</a></li>
+                                    <li><a href="./bathroom/bidgets.html">Toilets & Bidets</a></li>
+                                    <li><a href="./bathroom/bath.html">Bathroom Sinks</a></li>
+                                    <li><a href="./bathroom/mirror.html">Mirrors Medicine Cabinets</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#Designer" class="desktop-item">Designer</a>
+                    <input type="checkbox" id="showDrop">
+                    <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+                    <ul class="drop-menu">
+                        <li><a href="designer.html">Designer 1</a></li>
+                        <li><a href="designer -2.html">Designer 2</a></li>
+                        <li><a href="designer-3.html">Designer 3</a></li>
+                        <li><a href="designer-4.html">Designer 4</a></li>
+                        <li><a href="designer-5.html">Designer 5</a></li>
+                    </ul>
+                </li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+    </nav>
+
+
+    <div class="carousel">
+
+        <div class="list">
+            <div class="item" style="background-image: url(./assests/images/banner2.jpg);">
+            </div>
+
+            <div class="item" style="background-image: url(./assests/images/banner\ 1.webp);">
+            </div>
+
+            <div class="item" style="background-image: url(./assests/images/banner\ 3.webp);">
+            </div>
+
+            <div class="item" style="background-image: url(./assests/images/banner\ picture.jpg);">
+            </div>
+
+            <div class="item" style="background-image: url(./assests/images/decor\ curtain\ 1.jpg);">
+            </div>
+
+            <div class="item"
+                style="background-image: url(./assests/images/Luxurious-Relaxing-Coastal-Bathroom-Renovation.webp);">
+            </div>
+
+        </div>
+
+
+        <div class="arrows">
+            <button class="prev">
+                <</button>
+                    <button class="next">></button>
+        </div>
+
+        <div class="timeRunning"></div>
+    </div>
+
+
+    <div class="container mt-5">
+        <h2 class="text-center">GALLERY</h2>
+        <div class="row" data-aos="fade-up">
+            <div class="col-md-3">
+                <div class="image-container">
+                    <img src="assests/images/kitchen - Copy.jpeg" alt="kitchen" class="imge">
+                    <div class="image-text">kitchen</div>
+                </div>
+                <div class="image-container">
+                    <img src="assests/images/bath shower and tubs 4.jpg" alt="bathroom" class="imge">
+                    <div class="image-text">bathroom</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="image-container">
+                    <img src="./assests/images/furiture.jpg" alt="furiture">
+                    <div class="image-text">furniture</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="image-container">
+                    <img src="./lighting/images/floor lamp - Copy.jpg" alt="living" class="imge">
+                    <div class="image-text">lighting</div>
+                </div>
+                <div class="image-container">
+                    <img src="./assests/images/decor.jpg" alt="decor" class="imge">
+                    <div class="image-text">Decor</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container align-items-center">
+        <div class="row" data-aos="fade-up">
+            <h2 class="text-center" id="Designer">Designer</h2>
+            <div class="col-lg-4">
+                <div class="card text-center ">
+                    <img src="assests/images/1.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                        <h5 class="card-title">sarah4368</h5>
+                        <a href="/designer.html"><button id="addToCartButton"
+                                class="btn btn-warning">Details</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card text-center ">
+                    <img src="assests/images/0518d20a-42a1-4438-87fd-d3c85093313a.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                        <h5 class="card-title">Moonpearl</h5>
+                        <a href="/designer -2.html"><button id="addToCartButton"
+                                class="btn btn-warning">Details</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card text-center ">
+                    <img src="assests/images/0d2baa01-4412-44cb-9d2d-1cf6ec433d82.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                        <h5 class="card-title">Teri Dawn</h5>
+                        <a href="/designer-4.html"><button id="addToCartButton"
+                                class="btn btn-warning">Details</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5" data-aos="fade-up">
+                <div class="col-lg-4">
+                    <div class="card text-center ">
+                        <img src="assests/images/1d67d329-3804-4f70-aeb0-901df5f0e1e7.jpeg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body ">
+                            <h4 class="card-title"> ida dzaovic</h4>
+                            <a href="/designer-5.html"><button id="addToCartButton"
+                                    class="btn btn-warning">Details</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card text-center ">
+                        <img src="assests/images/492af951-1b46-4aed-80f8-10d311214942.jpeg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body ">
+                            <h4 class="card-title">Swetha Suresh</h4>
+                            <a href="/designer-5.html"><button id="addToCartButton"
+                                    class="btn btn-warning">Details</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="contact">
+        <div class="container py-4" id="contact">
+            <div class="contact-header text-center py-4">
+
+                <div class="row gx-lg-0 gy-4" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="200">
+                    <h2>Contact Us</h2>
+                    <div class="col-lg-4">
+                        <div class="info-container d-flex flex-column justify-content-center align-items-center">
+                            <div class="info-items d-flex mt-3 justify-content-center align-items-center">
+                                <i class="fa-solid fa-location-dot  me-lg-3"></i>
+                                <div class="info-text">
+                                    <h4>Location:</h4>
+                                    <p>A108 Adam Street, New York, NY 535022</p>
+                                </div>
+
+                            </div>
+                            <div class="info-items d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-envelope  me-lg-3"></i>
+                                <div class="info-text">
+                                    <h4>Emails:</h4>
+                                    <p>info@example.com</p>
+                                </div>
+                            </div>
+                            <div class="info-items d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-mobile me-lg-3"></i>
+                                <div class="info-text">
+                                    <h4>Cell:</h4>
+                                    <p>+1 5589 55488 55</p>
+                                </div>
+                            </div>
+                            <div class="info-items d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-clock me-lg-3"></i>
+                                <div class="info-text">
+                                    <h4>Open Hours</h4>
+                                    <p>Mon-Sat: 11AM - 23PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8 form text-start">
+
+                        <div class="form-floating mb-2">
+                            <input type="text" class="form-control" id="floatingName" placeholder="Your Name">
+                            <label for="floatingName">Your Name</label>
+                            <small id="span1"></small>
+                        </div>
+                        <div class="form-floating mb-2">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="Your Email">
+                            <label for="floatingInput">Email address</label>
+                            <small id="span2"></small>
+                        </div>
+                        <div class="form-floating mb-2">
+                            <textarea class="form-control" placeholder="Message" rows="2"
+                                id="floatingTextbox"></textarea>
+                            <label for="floatingTextarea">Message</label>
+                            <small id="span3"></small>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" id="submit" onclick="check()">SUBMIT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="form-modal" data-bs-backdrop="static">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body text-center m-5">
+                        <h1 class="mb-4">Thank You!</h1>
+                        <h5 class="mb-4">Your details have been successfully submitted. Thanks!</h5>
+                        <button class="btn btn-dark px-5 py-2 text-warning mt-3" data-bs-dismiss="modal">Done</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="/assests/app.js"></script>
+
+        <section class="py-5" data-aos="fade-up" data-aos-duration="500">
+            <div class="container py-5 mt-5" id="feedback">
+                <header class="text-dark mb-3">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h1 id="title">FEEDBACK</h1>
+                            <p>"Shape Our Future: Your Feedback is Essential!"</p>
+                        </div>
+                    </div>
+                </header>
+                <div class="form mb-4">
+                    <div class="form-floating mb-2">
+                        <input type="text" class="form-control" id="floatingUser" placeholder="Your Name">
+                        <label for="floatingUser">Your Name</label>
+                        <small id="feed1"></small>
+                    </div>
+                    <div class="form-floating mb-2">
+                        <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                        <label for="floatingEmail">Email address</label>
+                        <small id="feed2"></small>
+                    </div>
+                </div>
+                <h3>Rate Your Experience</h3>
+                <div class="form-group" data-aos="fade-up">
+                    <label for="quality">Quality of Products:</label>
+                    <div class="star-rating" id="quality-rating">
+                        <input type="radio" id="quality5" name="quality" value="5"><label for="quality5"
+                            class="fas fa-star"></label>
+                        <input type="radio" id="quality4" name="quality" value="4"><label for="quality4"
+                            class="fas fa-star"></label>
+                        <input type="radio" id="quality3" name="quality" value="3"><label for="quality3"
+                            class="fas fa-star"></label>
+                        <input type="radio" id="quality2" name="quality" value="2"><label for="quality2"
+                            class="fas fa-star"></label>
+                        <input type="radio" id="quality1" name="quality" value="1"><label for="quality1"
+                            class="fas fa-star"></label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="delivery">Delivery Experience:</label>
+                    <div class="star-rating" id="delivery-rating">
+                        <input type="radio" id="delivery5" name="delivery" value="5"><label for="delivery5"
+                            class="fas fa-star"></label>
+                        <input type="radio" id="delivery4" name="delivery" value="4"><label for="delivery4"
+                            class="fas fa-star"></label>
+                        <input type="radio" id="delivery3" name="delivery" value="3"><label for="delivery3"
+                            class="fas fa-star"></label>
+                        <input type="radio" id="delivery2" name="delivery" value="2"><label for="delivery2"
+                            class="fas fa-star"></label>
+                        <input type="radio" id="delivery1" name="delivery" value="1"><label for="delivery1"
+                            class="fas fa-star"></label>
+                    </div>
+                </div>
+                <div class="form-floating mt-5">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Message</label>
+                    <small id="feed3"></small>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-warning mt-3" type="button" onclick="sub()">SUBMIT FEEDBACK</button>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="modal fade" id="feed-modal" data-bs-backdrop="static" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body text-center m-5">
+                        <h1 class="mb-4">Thank You!</h1>
+                        <h5 class="mb-4">Your details have been successfully submitted. Thanks!</h5>
+                        <button class="btn btn-dark px-5 py-2 text-warning mt-3" data-bs-dismiss="modal">Done</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center">
+            <div class="row" id="Reviews">
+                <div class="col col-md-12">
+                    <h1>REVIEWS</h1>
+                </div>
+            </div>
+            <div class="row" data-aos="fade-up">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="col md-12">
+                                <div class="boxarea">
+                                    <div class="imgarea">
+                                        <img src="assests/images/1.jpg" alt="an img">
+                                    </div>
+                                    <h5>BILGATES</h5>
+                                    <span>Designation Goes Here</span>
+                                    <p class="content">
+                                        "The quality of these utensils is outstanding, and they look great in my
+                                        kitchen."
+                                    </p>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="socials">
+                                        <i class="fa-brands fa-instagram"></i>
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col col-md-12">
+                                <div class="boxarea">
+                                    <div class="imgarea">
+                                        <img src="assests/images/2.jpg" alt="an img">
+                                    </div>
+                                    <h5>BILGATES</h5>
+                                    <span>Designation Goes Here</span>
+                                    <p class="content">
+                                        "The quality of these utensils is outstanding, and they look great in my
+                                        kitchen."
+                                    </p>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="socials">
+                                        <i class="fa-brands fa-instagram"></i>
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col col-md-12">
+                                <div class="boxarea">
+                                    <div class="imgarea">
+                                        <img src="assests/images/3.jpg" alt="an img">
+                                    </div>
+                                    <h5>BILGATES</h5>
+                                    <span>Designation Goes Here</span>
+                                    <p class="content">
+                                        "The quality of these utensils is outstanding, and they look great in my
+                                        kitchen."
+                                    </p>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="socials">
+                                        <i class="fa-brands fa-instagram"></i>
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="map" class="container" data-aos="fade-up"></div>
+
+        <footer class="footer text-light py-4">
+            <div class="container ">
+                <div class="row gy-4">
+                    <div class="col-lg-5 col-md-12 footer-info">
+                        <a href="" class="d-flex align-items-center mb-4 ">
+                            <img src="./assests/images/logo.png" width="130px" height="150px" class="img-fluid">
+                        </a>
+                        <p>Crafting Comfort, Inspiring Elegance, Embracing You.Where Every Detail Matters, Every Room
+                            Tells a Story.</p>
+
+                        <div class="social-links d-flex mt-4 ">
+                            <a href="https://www.twitter.com" target="_blank"><i
+                                    class="fa-brands fa-twitter foot-icons"></i></a>
+                            <a href="https://www.facebook.com" target="_blank"><i
+                                    class="fa-brands fa-facebook foot-icons"></i></a>
+                            <a href="https://www.instagram.com" target="_blank"><i
+                                    class="fa-brands fa-instagram foot-icons"></i></a>
+                            <a href="https://www.linkedin.com" target="_blank"><i
+                                    class="fa-brands fa-linkedin foot-icons"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-6 footer-links mb-3">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="product.html">Product</a>
+                            </li>
+                            <li>
+                                <a href="#Designer">Designer</a>
+                            </li>
+                            <li>
+                                <a href="#feedback">Feedback</a>
+                            </li>
+                            <li>
+                                <a href="#Reviews">Customer Reviews</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-6 footer-links mb-3">
+                        <h4>Our Categories</h4>
+                        <ul>
+                            <li>
+                                <a href="./product.html?services=furniture">Furniture</a>
+                            </li>
+                            <li>
+                                <a href="./product.html?services=Decor">Decore</a>
+                            </li>
+                            <li>
+                                <a href="./product.html?services=Lighting">Lighting</a>
+                            </li>
+                            <li>
+                                <a href="./product.html?services=kitchen">Kitchen</a>
+                            </li>
+                            <li>
+                                <a href="./product.html?services=Bathroom">Bathroom</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-3 col-md-12 footer-contact text-center text-md-center">
+                        <h4>Contact Us</h4>
+                        <p>
+                            <a href="https://maps.app.goo.gl/96fXw8EjdyUTUNN5A">Civic Center Block -14
+                                <br>
+                                Gulshan-e-Iqbal Karachi -75300
+                                <br>
+                                Pakistan</a>
+                            <br>
+                            <br>
+                            <strong><a href="tel:+923187654561">Phone:</strong>
+                            +923187654561</a>
+                            <br>
+                            <strong><a href="mailto:info@example.com">Email: </strong>info@example.com</a>
+                        </p>
+                        <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container text-center mt-4">
+                <div class="copyright">
+                    &copy;copyright <span>
+                        <strong class="strong">home styler</strong>
+                    </span>
+                    All Rights Reserved
+                </div>
+
+                <div class="credit">
+                    Designed By
+                    <a href="#">OurTeam</a>
+                </div>
+            </div>
+        </footer>
+        <script src="./assests/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script>
+            AOS.init();
+            function initMap() {
+                var defaultLocation = { lat: -34.397, lng: 150.644 };
+
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: defaultLocation,
+                    zoom: 6
+                });
+
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(function (position) {
+                        var pos = {
+                            lat: position.coords.latitude,
+                            lng: position.coords.longitude
+                        };
+
+                        var marker = new google.maps.Marker({
+                            position: pos,
+                            map: map
+                        });
+
+                        map.setCenter(pos);
+                        map.setZoom(15);
+                    }, function () {
+                        handleLocationError(true, map);
+                    });
+                } else {
+                    handleLocationError(false, map);
+                }
+            }
+
+            function handleLocationError(browserHasGeolocation, map) {
+                var infoWindow = new google.maps.InfoWindow({ map: map });
+                infoWindow.setPosition(map.getCenter());
+                infoWindow.setContent(browserHasGeolocation ?
+                    'Error: The Geolocation service failed.' :
+                    'Error: Your browser doesn\'t support geolocation.');
+            }
+
+            window.onload = initMap;
+        </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+</body>
+
+</html>

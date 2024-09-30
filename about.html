@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME STYLER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assests/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="icon" type="image/x-icon" href="./assests/images/logo.png">
+    </head>
+<style>
+     .a-img {
+        height: 300px !important;
+        width: 100%;
+    }
+</style>
+<body>
+    <nav>
+        <div class="wrapper">
+            <a class="navbar-brand" href="#">
+                <img src="assests/images/logo.png" alt="" width="100px" height="50px">
+            </a>
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li>
+                    <a href="product.html" class="desktop-item">Product</a>
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile-item">Mega Menu</label>
+                    <div class="mega-box">
+                        <div class="content">
+                             <div class="row">
+                                <header><a href="product.html?services=furniture">furniture</a></header>
+                                <ul class="mega-links">
+                                    <li><a href="./furniture/sofa.html">sofas & couches</a></li>
+                                    <li><a href="./furniture/chairs.html">chairs & recliners</a></li>
+                                    <li><a href="./furniture/table.html">tables</a></li>
+                                    <li><a href="./furniture/beds.html">bed & matresses</a></li>
+                                    <li><a href="./furniture/storage.html">storage</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header><a href="product.html?services=kitchen">kitchen</a></header>
+                                <ul class="mega-links">
+                                    <li><a href="./kitchen/cabinets.html"> Cabinets & Pantries</a></li>
+                                    <li><a href="./kitchen/counter.html"> Counter tops</a></li>
+                                    <li><a href="./kitchen/sinks.html"> Sinks & Faucets</a></li>
+                                    <li><a href="./kitchen/carts.html"> Kitchen Islands & Carts</a></li>
+                                    <li><a href="./kitchen/back.html"> Backsplashes</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header><a href="product.html?services=Lighting">Lighting</a></header>
+                                <ul class="mega-links">
+                                    <li><a href="./lighting/ceiling.html">Ceiling Lights</a></li>
+                                    <li><a href="./lighting/walls.html">Wall Lights</a></li>
+                                    <li><a href="./lighting/floor.html">Floor Lamps</a></li>
+                                    <li><a href="./lighting/lamp.html">Table Lamps</a></li>
+                                    <li><a href="./lighting/outdoor.html">Outdoor Lighting</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header><a href="product.html?services=Decor">Decor</a></header>  
+                                <ul class="mega-links">
+                                    <li><a href="./decor/rugs.html"> Rugs & Carpets</a></li>
+                                    <li><a href="./decor/curtains.html"> Curtains & Blinds</a></li>
+                                    <li><a href="./decor/wall.html"> Wall Art & Mirrors</a></li>
+                                    <li><a href="./decor/cusshion.html"> Cushions & Throws</a></li>
+                                    <li><a href="./decor/vasses.html"> Vases & Plant Pots</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header><a href="product.html?services=Bathroom">Bathroom</a></header>
+                                <ul class="mega-links">
+                                    <li><a href="./bathroom/vanities.html">Vanities & Cabinets</a></li>
+                                    <li><a href="./bathroom/showers.html">Showers & Bathtubs</a></li>
+                                    <li><a href="./bathroom/bidgets.html">Toilets & Bidets</a></li>
+                                    <li><a href="./bathroom/bath.html">Bathroom Sinks</a></li>
+                                    <li><a href="./bathroom/mirror.html">Mirrors Medicine Cabinets</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="./index.html#Designer" class="desktop-item">Designer</a>
+                    <input type="checkbox" id="showDrop">
+                    <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+                    <ul class="drop-menu">
+                        <li><a href="designer.html">Designer 1</a></li>
+                        <li><a href="designer -2.html">Designer 2</a></li>
+                        <li><a href="designer-3.html">Designer 3</a></li>
+                        <li><a href="designer-4.html">Designer 4</a></li>
+                        <li><a href="designer-5.html">Designer 5</a></li>
+                    </ul>
+                </li>   
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="./index.html#feedback">Feedback</a></li>
+                <li><a href="./index.html#contact">Contact</a></li>
+            </ul>
+            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+    </nav>
+    <div class="banner1">
+        <div class="lays">
+            <h1 class="text-center mt-5">AB0UT</h1>
+        </div>
+    </div>
+
+    <div class="container mt-5" data-aos="fade-up">
+        <div class="row text-center">
+            <div class="col-6 col-md-3" data-aos="fade-up">
+                <img class="img-fluid a-img" src="./assests/images/homestyler17.jpeg" alt="">
+            </div>
+            <div class="col-6 col-md-3" data-aos="fade-up">
+                <img class="img-fluid a-img" src="./assests/images/homestyler18.jpeg" alt="">
+            </div>
+            <div class="col-6 col-md-3 mt-3 mt-md-0" data-aos="fade-up">
+                <img class="img-fluid a-img" src="./assests/images/homestyler19.jpeg" alt="">
+            </div>
+            <div class="col-6 col-md-3 mt-3 mt-md-0" data-aos="fade-up">
+                <img class="img-fluid a-img" src="./assests/images/homestyler10.jpeg" alt="">
+            </div>
+        </div>
+
+
+        <div class="row mt-5">
+            <div class="col-md-6"  data-aos="fade-up">
+                <h2>Welcome to Homestyler Your Ultimate Design Partner</h2>
+                <p class="p">At Homestyler, we help you bring your design vision to life with powerful 3D tools and a
+                    comprehensive library of elements to create your perfect home. Whether you're looking to furnish
+                    your space, remodel your kitchen, or add the finishing touches with decor and lighting, our platform
+                    has everything you need. Discover how Homestyler can transform every corner of your home.</p>
+            </div>
+            <div class="col-md-6 text-center"  data-aos="flip-left">
+                <img class="img-fluid rounded-3 a-img" src="./assests/images/outdoor lighting 5.webp" alt="">
+            </div>
+        </div>
+
+        <div class="row mt-5" data-aos="fade-up">
+            <div class="col-md-6 order-md-2">
+                <h2>Furniture Style Meets Functionality</h2>
+                <p class="p">The concept of "Furniture Style Meets Functionality" focuses on blending aesthetic design
+                    with
+                    practical utility. It emphasizes creating furniture that not only enhances the beauty of a space but
+                    also serves a specific purpose, maximizing usability without compromising on style. Key elements of
+                    this approach include.</p>
+            </div>
+            <div class="col-md-6 text-center order-md-1">
+                <img class="img-fluid rounded-3 a-img" src="./assests/images/homestyler13.jpeg" alt="">
+            </div>
+        </div>
+
+        <div class="row mt-5" data-aos="fade-up">
+            <div class="col-12 text-center">
+
+            </div>
+            <div class="col-md-6">
+                <h2>Kitchen Where Functionality Meets Design</h2>
+                <p class="p">A kitchen that balances functionality with design focuses on optimizing space and workflow
+                    while
+                    maintaining an appealing aesthetic. The layout follows the "work triangle" principle, ensuring
+                    smooth movement between the sink, stove, and refrigerator. Smart storage solutions like pull-out
+                    drawers, hidden compartments, and open shelving help keep the kitchen organized and clutter-free.
+                </p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img class="img-fluid rounded-3 a-img" src="./assests/images/homestyler18.jpeg" alt="">
+            </div>
+        </div>
+
+        <div class="row mt-5 mb-5" data-aos="fade-up">
+            <div class="col-md-6 text-center">
+                <img class="img-fluid rounded-3 a-img" src="./assests/images/sitemap.jpg" alt="">
+            </div>
+            <div class="col-md-6">
+                <h2>Lighting Illuminate Your Space</h2>
+                <p class="p">Lighting plays a key role in enhancing both the functionality and ambiance of any space.
+                    Task
+                    lighting, such as under-cabinet lights or pendant lamps, provides focused illumination for specific
+                    activities like cooking or reading. Ambient lighting, created through ceiling fixtures or wall
+                    sconces, sets the overall mood, while accent lighting highlights architectural features or déc.</p>
+            </div>
+        </div>
+
+        <div class="row mt-5 mb-5" data-aos="fade-up">
+            <div class="col-md-6">
+                <h2>Decor Add Personality to Your Home</h2>
+                <p class="p">Decor adds character and individuality to a home by reflecting personal style and taste.
+                    Thoughtfully
+                    chosen elements like artwork, throw pillows, rugs, and decorative objects infuse warmth and
+                    uniqueness into each space. Mixing textures and colors creates depth, while curated pieces such as
+                    vintage items or travel souvenirs tell a personal story. Plants and greenery bring in a natural
+                    touch, adding life and freshness to the deco</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img class="img-fluid rounded-3 a-img " src="./assests/images/decor.jpeg" alt="">
+            </div>
+        </div>
+
+        <div class="row mt-5 mb-5" data-aos="fade-up">
+            <div class="col-md-6 text-center">
+                <img class="img-fluid rounded-3 a-img" src="./assests/images/bath mirror and medicine 1.webp" alt="">
+            </div>
+            <div class="col-md-6">
+                <h2>Bathroom A Sanctuary of Relaxation</h2>
+                <p class="p">The bathroom is often regarded as a personal haven, offering a space to unwind and
+                    recharge. Whether
+                    it's a quick shower to kick-start the day or a long soak in the tub after a busy schedule, the
+                    bathroom serves as a retreat from the demands of everyday life. With carefully chosen fixtures,
+                    soothing colors, and calming lighting.</p>
+            </div>
+        </div>
+
+        <div class="row mt-5 mb-5" data-aos="fade-up">
+            <div class="col-md-6">
+                <h2>Start Designing Today</h2>
+                <p class="p">Designing your space is an exciting journey that begins with inspiration and creativity.
+                    Whether
+                    you’re revamping a room, redecorating a home, or starting a new project, there’s no better time to
+                    dive in. Begin by identifying your style preferences, setting a clear vision, and planning the
+                    layout. Consider colors, materials, and textures that reflect your personality and enhance comfort.
+                </p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img class="img-fluid rounded-3 a-img" src="./assests/images/Design .jpeg" alt="">
+            </div>
+        </div>
+    </div>
+    <footer class="footer text-light py-4">
+        <div class="container ">
+            <div class="row gy-4">
+                <div class="col-lg-5 col-md-12 footer-info">
+                    <a href="" class="d-flex align-items-center mb-4 ">
+                        <img src="./assests/images/logo.png" width="130px" height="150px" class="img-fluid">
+                    </a>
+                    <p>Crafting Comfort, Inspiring Elegance, Embracing You.Where Every Detail Matters, Every Room
+                        Tells a Story.</p>
+
+                    <div class="social-links d-flex mt-4 text-light">
+                        <a href="https://www.twitter.com" target="_blank"><i
+                                class="fa-brands fa-twitter foot-icons"></i></a>
+                        <a href="https://www.facebook.com" target="_blank"><i
+                                class="fa-brands fa-facebook foot-icons"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i
+                                class="fa-brands fa-instagram foot-icons"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank"><i
+                                class="fa-brands fa-linkedin foot-icons"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6 footer-links mb-3">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="product.html">Product</a>
+                        </li>
+                        <li>
+                            <a href="./index.html#Designer">Designer</a>
+                        </li>
+                        <li>
+                            <a href="./index.html#feedback">Feedback</a>
+                        </li>
+                        <li>
+                            <a href="./index.html#Reviews">Customer Reviews</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6 footer-links mb-3">
+                    <h4>Our Categories</h4>
+                    <ul>
+                        <li>
+                            <a href="./product.html?services=furniture">Furniture</a>
+                        </li>
+                        <li>
+                            <a href="./product.html?services=Decor">Decore</a>
+                        </li>
+                        <li>
+                            <a href="./product.html?services=Lighting">Lighting</a>
+                        </li>
+                        <li>
+                            <a href="./product.html?services=kitchen">Kitchen</a>
+                        </li>
+                        <li>
+                            <a href="./product.html?services=Bathroom">Bedroom</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-3 col-md-12 footer-contact text-center text-md-center">
+                    <h4>Contact Us</h4>
+                    <p>
+                        <a href="https://maps.app.goo.gl/96fXw8EjdyUTUNN5A">Civic Center Block -14
+                        <br>
+                        Gulshan-e-Iqbal Karachi -75300
+                        <br>
+                        Pakistan</a>
+                        <br>
+                        <br>
+                        <strong><a href="tel:+923187654561">Phone:</strong>
+                        +923187654561</a>
+                        <br>
+                        <strong><a href="mailto:info@example.com">Email: </strong>info@example.com</a></p>
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center mt-4">
+            <div class="copyright">
+                &copy;copyright <span>
+                    <strong class="strong">home styler</strong>
+                </span>
+                All Rights Reserved
+            </div>
+
+            <div class="credit">
+                Designed By
+                <a href="#">OurTeam</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="/assests/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
